@@ -1,38 +1,46 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
+/* Basic body styles */
 body {
+  background-color: #FAF9F6; /* Light cream background */
+  color: #003366; /* Deep blue text */
   font-family: 'Poppins', sans-serif;
-  background-color: #FAF9F6;
-  color: #003366;
+  font-size: 16px;
+  line-height: 1.6;
   margin: 0;
   padding: 0;
 }
 
+/* Header flex with logo and title */
 header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
   background-color: #003366;
   color: #FFD700;
+  padding: 20px;
   text-align: center;
-  padding: 20px 10px;
-  position: relative;
+  flex-wrap: wrap; /* for smaller screens */
 }
 
 header h1 {
   margin: 0;
-  font-size: 2.5rem;
-  line-height: 1.2;
 }
 
+header h1 span {
+  font-size: 20px;
+}
+
+/* Bigger logo */
 .logo {
   height: 100px;
-  margin: 0 20px;
-  vertical-align: middle;
   object-fit: contain;
 }
 
+/* Navigation bar styles */
 nav {
   background-color: #003366;
-  padding: 10px 20px;
   text-align: center;
+  padding: 10px 0;
 }
 
 .nav-list {
@@ -40,20 +48,24 @@ nav {
   margin: 0;
   padding: 0;
   display: inline-flex;
-  gap: 25px;
+  gap: 30px;
+  flex-wrap: wrap; /* wrap on small screens */
+  justify-content: center;
 }
 
 .nav-list li a {
   color: #FFD700;
-  text-decoration: none;
   font-weight: 600;
   font-size: 1.1rem;
+  text-decoration: none;
+  padding: 6px 8px;
 }
 
 .nav-list li a:hover {
   text-decoration: underline;
 }
 
+/* Gallery vertical scroll + snap */
 .gallery {
   height: 400px;
   overflow-y: scroll;
@@ -61,6 +73,8 @@ nav {
   padding: 10px 20px;
   border: 1px solid #ccc;
   border-radius: 8px;
+  margin: 20px auto;
+  max-width: 800px;
 }
 
 .gallery img {
@@ -71,3 +85,50 @@ nav {
   scroll-snap-align: start;
   border-radius: 6px;
 }
+
+/* Section headings */
+h2 {
+  color: #003366;
+  font-weight: 600;
+  margin-left: 20px;
+}
+
+/* Announcement or feature section */
+.features {
+  padding: 20px;
+  background-color: #fff;
+  margin: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #ccc;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Footer */
+footer {
+  background-color: #003366;
+  color: #FFD700;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+  }
+
+  .nav-list {
+    gap: 15px;
+  }
+
+  .gallery {
+    height: 300px;
+  }
+
+  .gallery img {
+    height: 200px;
+  }
+}
+

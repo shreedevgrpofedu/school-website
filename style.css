@@ -149,3 +149,18 @@ header h2 {
   margin: 5px 0;
   color: #FFD700; /* Same golden yellow as other header text */
 }
+
+/* Force all header content to align center */
+header {
+  text-align: center;
+}
+
+/* Make all header h2s behave well on desktop */
+header h2 {
+  display: block;
+  width: 100%;
+  font-size: 18px;
+  margin: 4px 0;
+  color: #FFD700;
+  line-height: 1.4;
+}

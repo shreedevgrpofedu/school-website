@@ -2,126 +2,67 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Shree Dev Group of Education</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
- <style>
-  /* Basic body styles */
-  body {
-    background-color: #FAF9F6; /* Light cream background */
-    color: #003366; /* Deep blue text */
-    font-family: 'Poppins', sans-serif;
-    font-size: 16px;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-  }
-
-  /* Import Google Font */
-  @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
-  /* Header and footer background */
-  header, footer {
-    background-color: #003366;
-    color: #FFD700;
-    padding: 10px 20px;
-    text-align: center;
-  }
-
-  /* Links */
-  a {
-    color: #FFD700;
-    text-decoration: none;
-  }
-
-  a:hover {
-    text-decoration: underline;
-  }
-
-  /* Logo style */
-  .logo {
-    height: 60px;
-    margin: 10px 20px;
-  }
-
-  /* Gallery container */
-  .gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 15px;
-    padding: 10px 20px;
-  }
-
-  /* Gallery images */
-  .gallery img {
-    width: 100%;
-    height: auto;
-    border-radius: 6px;
-    object-fit: cover;
-  }
-
-  /* Announcement or feature section */
-  .features {
-    padding: 20px;
-    background-color: #fff;
-    margin: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px #ccc;
-  }
-
-  /* Headings */
-  h1, h2, h3 {
-    color: #003366;
-    font-weight: 600;
-  }
-</style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
   <header>
-    <h1>Shree Dev Group of Education<br><span style="font-size: 20px;">श्री देव ग्रुप ऑफ एजुकेशन</span></h1>
-    <img src="Project 4.jpg" alt="Logo" class="logo">
+    <img src="Project 4.jpg" alt="School Logo" class="logo" />
+    <h1>Shree Dev Group of Education<br /><span>श्री देव ग्रुप ऑफ एजुकेशन</span></h1>
   </header>
 
-  <section>
-    <h2>🎓 Admissions Open for 2025-26!<br><span>सत्र 2025-26 के लिए प्रवेश प्रारंभ!</span></h2>
-  </section>
+  <nav>
+    <ul class="nav-list">
+      <li><a href="#admissions">Admissions</a></li>
+      <li><a href="#calendar">Calendar</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-  <section>
-    <h2>📅 Academic Calendar | शैक्षिक कैलेंडर</h2>
-    <img src="calendar.jpg" alt="Academic Calendar" style="width: 100%; max-width: 800px;">
-  </section>
+  <main>
+    <section id="admissions">
+      <h2>🎓 Admissions Open for 2025-26!<br /><span>सत्र 2025-26 के लिए प्रवेश प्रारंभ!</span></h2>
+    </section>
 
-  <section class="gallery">
-    <h2>📸 Gallery | गैलरी</h2>
-    <img src="IMG-20250503-WA0001.jpg" alt="Gallery Image 1">
-    <img src="IMG-20250503-WA0003.jpg" alt="Gallery Image 2">
-    <img src="IMG-20250503-WA0005.jpg" alt="Gallery Image 3">
-    <img src="bziIlFyd5qL7MJazLi6l.png" alt="Gallery Image 4">
-  </section>
+    <section id="calendar">
+      <h2>📅 Academic Calendar | शैक्षिक कैलेंडर</h2>
+      <img src="calendar.jpg" alt="Academic Calendar" style="width: 100%; max-width: 800px;" />
+    </section>
 
-  <section>
-    <h2>🎯 Special Features | विशेषताएं-- </h2>
-    <p>1}We offer preparation for Navodaya and Sainik School entrance exams.<br>
-       हम नवोदय और सैनिक स्कूल प्रवेश परीक्षा की तैयारी भी कराते हैं।</p>
-    <p>2}Improve your chances of selection with focused study and practice.<br>
-       केंद्रित अध्ययन और अभ्यास से चयन के अवसर बढ़ाएं।</p>
-    <p>3}Experienced teachers guide students with effective study plans.<br>
-       अनुभवी शिक्षक छात्रों को प्रभावी अध्ययन योजनाओं के साथ मार्गदर्शन करते हैं।</p>
-    <p>4}Regular mock tests and doubt clearing sessions are conducted.<br>
-       नियमित मॉक टेस्ट और संदेह निवारण सत्र आयोजित किए जाते हैं।</p>
-    <p>5}Special focus is given to English, Mathematics, and General Knowledge.<br>
-       अंग्रेज़ी, गणित और सामान्य ज्ञान पर विशेष ध्यान दिया जाता है।</p>
-    <p>6}Enroll now to secure your future with our dedicated support.<br>
-       हमारे समर्पित समर्थन के साथ अपना भविष्य सुरक्षित करने के लिए अभी नामांकन करें।</p>
-    <p>7}We focus on overall personality development along with academics.<br>
-       हम शैक्षणिक के साथ-साथ समग्र व्यक्तित्व विकास पर भी ध्यान देते हैं।</p>
-  </section>
+    <section id="gallery" class="gallery">
+      <h2>📸 Gallery | गैलरी</h2>
+      <img src="IMG-20250503-WA0001.jpg" alt="Students in classroom" />
+      <img src="IMG-20250503-WA0003.jpg" alt="School event" />
+      <img src="IMG-20250503-WA0005.jpg" alt="Outdoor activities" />
+      <img src="bziIlFyd5qL7MJazLi6l.png" alt="School building" />
+    </section>
 
-  <footer style="margin-top: 40px; text-align: center;">
-    <p style="font-size: 18px; color: darkgreen;">
-      शिक्षा का दीप गाँव-गाँव तक | Bringing Quality Education to Rural India
-    </p>
+    <section id="features" class="features">
+      <h2>🎯 Special Features | विशेषताएं</h2>
+      <p>1) We offer preparation for Navodaya and Sainik School entrance exams.<br />
+         हम नवोदय और सैनिक स्कूल प्रवेश परीक्षा की तैयारी भी कराते हैं।</p>
+      <p>2) Improve your chances of selection with focused study and practice.<br />
+         केंद्रित अध्ययन और अभ्यास से चयन के अवसर बढ़ाएं।</p>
+      <p>3) Experienced teachers guide students with effective study plans.<br />
+         अनुभवी शिक्षक छात्रों को प्रभावी अध्ययन योजनाओं के साथ मार्गदर्शन करते हैं।</p>
+      <p>4) Regular mock tests and doubt clearing sessions are conducted.<br />
+         नियमित मॉक टेस्ट और संदेह निवारण सत्र आयोजित किए जाते हैं।</p>
+      <p>5) Special focus is given to English, Mathematics, and General Knowledge.<br />
+         अंग्रेज़ी, गणित और सामान्य ज्ञान पर विशेष ध्यान दिया जाता है।</p>
+      <p>6) Enroll now to secure your future with our dedicated support.<br />
+         हमारे समर्पित समर्थन के साथ अपना भविष्य सुरक्षित करने के लिए अभी नामांकन करें।</p>
+      <p>7) We focus on overall personality development along with academics.<br />
+         हम शैक्षणिक के साथ-साथ समग्र व्यक्तित्व विकास पर भी ध्यान देते हैं।</p>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <p>शिक्षा का दीप गाँव-गाँव तक | Bringing Quality Education to Rural India</p>
     <p>📍 Tejpur, Eka, Firozabad | 📞 9759247816</p>
   </footer>
 

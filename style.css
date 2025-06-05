@@ -143,3 +143,9 @@ section img {
   max-width: 90%;
   border-radius: 8px;
 }
+/* Styling for extra school names in header */
+header h2 {
+  font-size: 18px;
+  margin: 5px 0;
+  color: #FFD700; /* Same golden yellow as other header text */
+}

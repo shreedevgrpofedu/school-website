@@ -131,4 +131,15 @@ footer {
     height: 200px;
   }
 }
-
+/* Centering all section content */
+section {
+  text-align: center;
+  padding: 20px;
+}
+/* Centering and styling images inside sections */
+section img {
+  display: block;
+  margin: 10px auto;
+  max-width: 90%;
+  border-radius: 8px;
+}
